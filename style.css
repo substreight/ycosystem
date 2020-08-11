@@ -11,6 +11,8 @@ html::-webkit-scrollbar {
 }
 
 body {
+  background-color: #F8F8F8;
+
 }
 
 .header {
@@ -19,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   height: 100%;
   background-color: #0077fd;
 }
@@ -31,8 +33,8 @@ body {
 }
 
 .main-wrapper {
-  margin-bottom: 10em;
-  margin-top: 10em;
+  margin-bottom: 7em;
+  margin-top: 7em;
 }
 
 .content-wrapper {
@@ -45,18 +47,10 @@ body {
   margin-bottom: 50px;
 }
 
-hr {
-  width: 280px;
-  background-color: white;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-}
-
 .services {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #F8F8F8;
   min-height: 10vh;
   height: 100%;
   width: 60vw;
@@ -80,10 +74,14 @@ hr {
   position: relative;
   min-height: 100%;
   align-items: center;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 40vh;
+  height: 40vh;
   background-color: #0077fd;
   flex-wrap: wrap;
+}
+.dark-mode {
+  color: #081B33;
+}
 }
 
 .button-wrapper {
@@ -103,15 +101,16 @@ hr {
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  flex: 1;
   max-width: 30%;
+  width: 30%;
   height: 150px;
   transition: 0.3s;
   margin: 15px 15px 15px 15px;
-  background: white;
+  background: #F8F8F8;
   border: 3px solid;
   border-radius: 0px 30px;
-  border-color: #0077fd;
+  border-color: #5CA8FF;
+    flex-wrap: wrap;
 }
 
 .card-links:hover {
@@ -120,10 +119,10 @@ hr {
   height: 150px;
   transition: 0.3s;
   margin: 15px 15px 15px 15px;
-  background: white;
+  background: #F8F8F8;
   border: 3px solid;
   border-radius: 30px 0px;
-  border-color: #0077fd;
+  border-color: #5CA8FF;
 }
 
 .buttons {
@@ -135,10 +134,10 @@ hr {
   background: #0077fd;
   border: 3px solid;
   border-radius: 0px 30px;
-  border-color: white;
+  border-color: #F8F8F8;
   font-family: sans-serif;
   font-size: 16px;
-  color: white;
+  color: #F8F8F8;
 }
 
 .buttons:hover {
@@ -150,10 +149,10 @@ hr {
   background: #0077fd;
   border: 3px solid;
   border-radius: 30px 0px;
-  border-color: white;
+  border-color: #F8F8F8;
   font-family: sans-serif;
   font-size: 16px;
-  color: white;
+  color: #F8F8F8;
 }
 
 #telegram-icon {
@@ -179,13 +178,13 @@ hr {
 }
 
 .item1 {
-  color: white;
+  color: #F8F8F8;
   text-decoration: none;
   padding: 0 20px 0 20px;
 }
 
 .item1:hover {
-  text-decoration: underline white;
+  text-decoration: underline #F8F8F8;
 }
 
 .links {
@@ -233,7 +232,7 @@ hr {
 }
 
 .header h1 {
-  color: white;
+  color: #F8F8F8;
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 50px;
@@ -247,7 +246,7 @@ hr {
 }
 
 .header h2 {
-  color: white;
+  color: #F8F8F8;
   font-family: sans-serif;
   font-weight: lighter;
   margin-top: -15px;
@@ -261,12 +260,12 @@ hr {
 
 .h2-title {
   display: flex;
-  justify-content: flex-start;
-  margin: 30px 0 20px 0;
+  align-self: flex-start;
+  margin: 10px 0 10px 0;
 }
 
 .header p {
-  color: white;
+  color: #F8F8F8;
   font-family: sans-serif;
   font-weight: lighter;
 }
@@ -278,13 +277,13 @@ hr {
 }
 
 .footer h1 {
-  color: white;
+  color: #F8F8F8;
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 675px) {
   .card-links {
     text-decoration: none;
     display: flex;
@@ -293,11 +292,21 @@ hr {
     min-width: 90vw;
     height: 150px;
     transition: 0.3s;
-    background: white;
+    background: #F8F8F8;
     border: 3px solid;
     margin: 10px 0 10px 0;
     border-radius: 0px 30px;
-    border-color: #0077fd;
+    border-color: #5CA8FF;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 90vh;
+    background-color: #0077fd;
   }
 
   .card-links:hover {
@@ -306,24 +315,24 @@ hr {
     height: 150px;
     transition: 0.3s;
     margin: 15px 15px 15px 15px;
-    background: white;
+    background: #F8F8F8;
     border: 3px solid;
     border-radius: 30px 0px;
-    border-color: #0077fd;
+    border-color: #5CA8FF;
   }
 
   .services {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    min-height: 20vh;
+    background-color: #F8F8F8;
+    min-height: 10vh;
     height: 100%;
-    width: 60vw;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   .card-links:hover {
@@ -333,11 +342,11 @@ hr {
     width: 90vw;
     height: 150px;
     transition: 0.3s;
-    background: white;
+    background: #F8F8F8;
     border: 3px solid;
     margin: 10px 0 10px 0;
     border-radius: 30px 0px;
-    border-color: #0077fd;
+    border-color: #5CA8FF;
   }
 
   .header-image {
@@ -347,21 +356,21 @@ hr {
   }
 
   .header h1 {
-    color: white;
+    color: #F8F8F8;
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 2.5em;
   }
 
   .header h2 {
-    color: white;
+    color: #F8F8F8;
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 1em;
   }
 
   .footer h1 {
-    color: white;
+    color: #F8F8F8;
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 30px;
@@ -375,5 +384,4 @@ hr {
     bottom: 30px;
     position: absolute;
   }
-
   }
